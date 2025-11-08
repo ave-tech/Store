@@ -1,0 +1,351 @@
+
+/*===============================================
+            TITLE animation
+=================================================*/
+.title {
+  display: inline-block;
+  animation: title 1s ease forwards;
+}
+
+/* Saat hover, teks kembali ke posisi awal */
+.title:hover {
+  animation: title-reverse 1s ease forwards;
+}
+
+/* Animasi awal: teks naik dan muncul bayangan */
+@keyframes title {
+  0% {
+    transform: translateY(0);
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    text-shadow: 
+      0 1px 0 #cccccc,
+      0 2px 0 #cccccc,
+      0 3px 0 #cccccc,
+      0 4px 0 #cccccc,
+      0 5px 0 #cccccc,
+      0 6px 0 #cccccc,
+      0 7px 0 #cccccc,
+      0 8px 0 #cccccc,
+      0 9px 0 #cccccc,
+      0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Animasi saat hover: teks turun kembali normal */
+@keyframes title-reverse {
+  0% {
+    transform: translateY(-50px);
+    text-shadow: 
+      0 1px 0 #cccccc,
+      0 2px 0 #cccccc,
+      0 3px 0 #cccccc,
+      0 4px 0 #cccccc,
+      0 5px 0 #cccccc,
+      0 6px 0 #cccccc,
+      0 7px 0 #cccccc,
+      0 8px 0 #cccccc,
+      0 9px 0 #cccccc,
+      0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: translateY(0);
+    text-shadow: none;
+  }
+}
+.btitle {
+    width: 200px;
+    height: 100px;
+    padding-top: 50px;
+}
+/*================================================
+                     STYLE PAGE UTAMA
+==================================================*/
+/* Keyframe untuk animasi */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Kondisi awal elemen ketika belum terlihat */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(25px);
+}
+h1 {
+    text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lebarkontainer400 {
+    width: 400px;
+}
+.lebarkontainerfull {
+    width: 100%;
+}
+.box {
+    gap: 3px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 2px black;
+    padding: 10px;
+    transition: 0.5s;
+    display: flex;
+}
+.mouse {
+    cursor: pointer;
+    transition: 1s;
+}
+.mouse:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.shortcut {
+    width: 175px;
+    cursor: pointer;
+}
+.tinggibox {
+    height: 310px;
+}
+.tinggibox:hover {
+    background-color: black;
+    color: white;
+}
+.box:hover {
+    transition: 0.5s;
+    scale: 105%;
+}
+.lejen {
+    box-shadow: 0 -1px 10px 1px black;
+    transition: 1s;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+.lejen:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.line {
+    border: 3px solid black;
+    width: 100%;
+}
+.notfullbox {
+    justify-content: center;
+    gap: 5px;
+}
+.noneborder {
+    box-shadow: none;
+    top: 50%;
+    background-color: transparent;
+}
+.noneborder:hover {
+    color: blue;
+    scale: 120%;
+}
+.menupage {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+}
+.menupage:hover {
+    color: blue;
+    transition: 1s;
+}
+.textrdm {
+    color: grey;
+    padding: 50px;
+}
+.textrdm b {
+    color: black;
+    transition: 0.5s;
+}
+.textrdm b:hover {
+    color: blue;
+    transition: 0.5s;
+}
+.textrdm del {
+    color: #d7d7d7;
+    transition: 0.5s;
+}
+.textrdm del:hover {
+    color: red;
+    transition: 0.5s;
+}
+.lasthome {
+    background-color: black;
+    color: grey;
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.lasthome u {
+    color: grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.lasthome u:hover {
+    color: white;
+    transition: 0.5;
+}
+.oneboxhome {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+/*========================================
+            STYLE PAGE ABOOUT
+=========================================*/
+.boxabout {
+    background-color: white;
+    box-shadow: 0 2px 10px 2px black;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+    transition: 1s;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+.boxabout:hover {
+    box-shadow: 0 2px 10px 2px blue;
+    scale: 120%;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+/*========================================
+          STYLE PAGE LAYANAN
+==========================================*/
+.boxlayanan {
+    background-color: white;
+    box-shadow: 0 2px 10px 2px black;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+.boxlayanan:hover {
+    box-shadow: 0 2px 10px 2px green;
+    scale: 120%;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.dropdown {
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.dropdown:hover {
+    scale: 110%;
+    transition: 1s;
+}
+.type-white {
+    background-color: white;
+    box-shadow: 0 3px 15px 2px black;
+}
+.type-red {
+    background-color: pink;
+    box-shadow: 0 3px 15px 2px red;
+}
+.type-yellow {
+    background-color: lightyellow;
+    box-shadow: 0 3px 15px 2px yellow;
+}
+.type-blue {
+    background-color: lightblue;
+    box-shadow: 0 3px 15px 2px blue;
+}
+/* ANIMASI MUNCUL BERURUTAN */
+.hidden {
+    display: none;
+}
+
+.dropdown.menu-item {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ANIMASI MUNCUL BERURUTAN */
+.hidden {
+    display: none;
+}
+
+.dropdown.menu-item {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Show Animation */
+.show {
+    animation: slideDown 0.5s forwards;
+}
+
+/* Close Animation */
+.close {
+    animation: slideUp 0.4s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+/*=================================================
+                         PAGE CONTACT
+==================================================*/
+.butt-wa {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, green, lightgreen, transparent, transparent);
+}
