@@ -73,5 +73,5 @@ function ig(){window.location.href = 'https://www.instagram.com/ave.studio_01';}
     //if (isMobile) {
         // Ganti dengan lokasi file peringatan kamu
         //window.location.href = "no-mobile.html";
-    }
-})();
+    //}
+//})();
