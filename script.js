@@ -62,16 +62,9 @@ const observer = new IntersectionObserver(entries => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+
 function wa(){window.location.href = 'https://wa.me/+6285881330296';}
 function email(){window.location.href = 'mailto:contactavestudiocs@gmail.com';}
 function dc(){window.location.href = 'https://discord.gg/VWe5vZSx';}
 function ig(){window.location.href = 'https://www.instagram.com/ave.studio_01';}
-
-(function () {
-    const isMobile = /android|iphone|ipad|ipod|blackberry|windows phone|mobile/i.test(navigator.userAgent);
-
-    if (isMobile) {
-        // Ganti dengan lokasi file peringatan kamu
-        window.location.href = "no-mobile.html";
-    }
-})();
