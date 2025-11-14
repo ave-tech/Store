@@ -7,6 +7,9 @@ function avestore() {
 function layanan() {
     window.location.href = 'layanan.html';
 }
+function kontak() {
+    window.location.href = 'contact.html'
+}
 let isShown = false;
 
 function showlayanan() {
