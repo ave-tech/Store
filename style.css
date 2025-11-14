@@ -89,8 +89,8 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
 }
-.lebarkontainer400 {
-    width: 400px;
+.lebarkontainer350 {
+    width: 350px;
 }
 .lebarkontainerfull {
     width: 100%;
@@ -105,6 +105,7 @@ h1 {
     padding: 10px;
     transition: 0.5s;
     display: flex;
+    font-size: 15px;
 }
 .mouse {
     cursor: pointer;
@@ -116,7 +117,7 @@ h1 {
     transition: 1s;
 }
 .shortcut {
-    width: 175px;
+    width: 145px;
     cursor: pointer;
 }
 .tinggibox {
@@ -340,12 +341,100 @@ h1 {
 ==================================================*/
 .butt-wa {
     cursor: pointer;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    font-size: 50px;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at center, green, lightgreen, transparent, transparent);
+    box-shadow: 0 5px 10px 5px green;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+.butt-wa:hover {
+    scale: 110%;
+    background-color: green;
+    box-shadow: 0 5px 10px 5px black;
+}
+.butt-ig {
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 5px pink;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.butt-ig:hover {
+    scale: 110%;
+    background-color: pink;
+    box-shadow: 0 5px 10px 5px black;
+}
+.butt-dc {
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 5px blue;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.butt-dc:hover {
+    scale: 110%;
+    background-color: blue;
+    box-shadow: 0 5px 10px 5px black;
+}
+.butt-hubnow {
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 5px lightblue;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.butt-hubnow:hover {
+    scale: 110%;
+    background-color: lightblue;
+    box-shadow: 0 5px 10px 5px black;
+}
+.butt-email {
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 5px red;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.butt-email:hover {
+    scale: 110%;
+    background-color: red;
+    box-shadow: 0 5px 10px 5px black;
 }
