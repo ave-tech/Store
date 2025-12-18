@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
             // Redirect dengan parameter untuk menghindari loop
             window.location.href = 'dekstop-error.html?redirected=true';
         } else {
-            window.location.href = 'store.html?redirected=true';
+            window.location.href = 'index.html?redirected=true';
         }
     }
 });
