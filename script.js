@@ -1,18 +1,41 @@
-// Deteksi sekali saat halaman pertama kali load
-window.addEventListener('load', function() {
-    // Cek URL apakah sudah ada parameter redirect
-    const urlParams = new URLSearchParams(window.location.search);
-    
-    if (!urlParams.has('redirected')) {
-        const isDesktop = window.innerWidth >= 768;
-        
-        if (isDesktop) {
-            // Redirect dengan parameter untuk menghindari loop
-            window.location.href = 'dekstop-error.html?redirected=true';
-        } else {
-            window.location.href = 'index.html?redirected=true';
-        }
-    }
-});
-function wa() {window.location.href = 'https://wa.me/+6285881330296';}
-function email() {window.location.href = 'mailto:contactavestudiocs@gmail.com';}
+const item1 = document.getElementById("item1");
+const item2 = document.getElementById("item2");
+const item3 = document.getElementById("item3");
+const item4 = document.getElementById("item4");
+const item5 = document.getElementById("item5");
+
+function card1() {
+    item1.style.display = "block";
+    item2.style.display = "none";
+    item3.style.display = "none";
+    item4.style.display = "none";
+    item5.style.display = "none";
+}
+function card2() {
+    item1.style.display = "none";
+    item2.style.display = "block";
+    item3.style.display = "none";
+    item4.style.display = "none";
+    item5.style.display = "none";
+}
+function card3() {
+    item1.style.display = "none";
+    item2.style.display = "none";
+    item3.style.display = "block";
+    item4.style.display = "none";
+    item5.style.display = "none";
+}
+function card4() {
+    item1.style.display = "none";
+    item2.style.display = "none";
+    item3.style.display = "none";
+    item4.style.display = "block";
+    item5.style.display = "none";
+}
+function card5() {
+    item1.style.display = "none";
+    item2.style.display = "none";
+    item3.style.display = "none";
+    item4.style.display = "none";
+    item5.style.display = "block";
+}
