@@ -1,223 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVE Store</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-    body {
-        background-image: url('purple-dark.jpg');
-        background-size: cover;
-    }
-        .title {
-            padding-left: 10px;
-            padding-right: 10px;
-            text-align: center;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 35px;
-            font-style: bold;
-            border-bottom: 5px solid black;
-            border-left: solid black;
-            border-right: solid black;
-            transition: 0.5s;
-            cursor: pointer;
-            position: fixed;
-            left: 15%;
-            top: 0px;
-            z-index: 2;
-            color: white;
-        }
-        .title:hover {
-            border-left: 5px solid black;
-            border-right: 5px solid black;
-            border-top: solid black;
-            border-bottom: none;
-            transition: 0.5s;
-        }
-        .txt-main {
-            border: none;
-            left: 10px;
-            position: relative;
-            width: 70%;
-            font-size: 15px;
-            padding: 5px;
-            border-radius: 20px;
-        }
-        .txt-main b { color: skyblue; }
-        
-        .txt-main legend {
-            padding: 5px;
-            border-radius: 20px;
-            color: white;
-        }
-        .game-categ-out {
-            position: relative;
-            width: 50px;
-            height: 280px;
-            left: 10px;
-            border-radius: 20px;
-            background-color: #1e1e1e;
-            color: white;
-            text-align: center;
-            font-size: 18px;
-            padding-top: 10px;
-            z-index: 1;
-        }
-        .child-game-categ {
-            width: 150px;
-            height: 25px;
-            position: relative;
-            border: 1px solid #1e1e1e;
-            border-left: none;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            left: 9px;
-            padding: 5px;
-        }
-        .child-game-flex {
-            position: relative;
-            top: -285px;
-            left: 50px;
-            height: 280px;
-            width: 210px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-       .main-categ-umum {
-           left: 10px;
-           position: relative;
-           width: 250px;
-           height: 35px;
-           text-align: center;
-           border-radius: 20px;
-           color: white;
-           background-color: #1e1e1e;
-           padding-top: 5px;
-           padding-bottom: 5px;
-           font-size: 15px;
-           top: -260px;
-       }
-       .shape-area-umum {
-           position: relative;
-           width: 200px;
-           height: 100px;
-           border-bottom-right-radius: 20px;
-           border-bottom-left-radius: 20px;
-           left: 29px;
-           top: -260px;
-           padding: 5px;
-       }
-       .item-umum {
-           width: 80px;
-           height: 20px;
-           position: relative;
-           border-radius: 20px;
-           color: white;
-           text-align: center;
-           padding: 5px;
-           top: 10px;
-       }
-       .item-umum-khusus {
-           position: relative;
-           width: 150px;
-           height: 20px;
-           top: -310px;
-           left: 55px;
-           border-radius: 20px;
-           padding: 5px;
-           text-align: center;
-           color: white;
-       }
-       .main-kateg-oth-flex {
-           width: 250px;
-           height: 250px;
-           left: 10px;
-           position: relative;
-           top: -260px;
-       }
-       .main-kateg-oth {
-           width: 30px;
-           height: 290px;
-           background-color: #1e1e1e;
-           border-radius: 20px;
-           text-align: center;
-           color: white;
-           padding: 5px;
-       }
-       .collide-oth-flex {
-           width: 170px;
-           position: relative;
-           height: 260px;
-           left: 50px;
-           top: -490px;
-       }
-       .item-oth {
-           width: 170px;
-           position: relative;
-           height: 30px;
-           border-top: solid white;
-           border-bottom: solid white;
-           text-align: center;
-           padding-top: 10px;
-           color: white;
-       }
-       .np { padding-top: 0px; height: 40px; }
-    </style>
 </head>
-
 <body>
-    <div class="ave glass-white"></div>
-    <div style="height: 100px">
-        <div class="glass-white title"><b>AVE Store</b></div>
+    <nav>
+        <a href="#utama">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#promo">Promo</a>
+        <a href="#order">Order</a>
+        <a href="#snk">S&K</a>
+        <a href="#kontak">Contact</a>
+    </nav>
+    <div class="title glass-white">
+        <div class="txt-ave glass-white">AVE Store</div>
+        <div class="ave glass-white"></div>
     </div>
-    <div class="flex-h">
-        <fieldset class="txt-main glass-black">
-            <legend class="glass-black">Tentang</legend>
-            <p style="color: white">
-                Selamat datang di website <b>AVE</b>.<br>
-                website ini adalah opsi cepat untuk kalian yang ingin mencari informasi cepat, order layanan langsung, dan sebagainya.<br>
-                semua informasi detail akan di unggah ke website ini.<br>
-                jika informasi yang anda cari belum ada, silahkan menunggu update website ini atau hubungi kami.<br>
-                kami akan secepatnya memberi informasi konten yang anda cari.<br>
-                <br>
-                Silahkan Menjelajahi Website <b>AVE STORE</b>
-            </p>
-        </fieldset>
-        <div class="panel-side glass-white flex-v">
-            <div onclick="window.location.href = 'ComingSoon.html';" class="item-panel">Order</div>
-            <div onclick="wa()" class="item-panel">WA</div>
-            <div onclick="email()" class="item-panel">Email</div>
-            <div onclick="login()" class="item-panel">Login</div>
-            <div class="item-panel">More</div>
+    <section id="utama">
+        <div class="bg-set">
+            <div class="txt1">Beli Semua Kebutuhan Anda Hanya di <b><u>AVE Store</u></b></div>
+            <div id="item1">
+                Banyak Penawaran <b><u>Keren!</u></b>
+                <div class="txt-off1">Top up Semua Kebutuhan Game <b><u><i>Terlengkap</i></u></b></div>
+                <div class="img1"></div>
+            </div>
+            <div id="item2">
+                Harga Sangat Terjangkau!
+                <div class="txt-off2">Pembuatan Website <b><u><i>1 Bulan Pertama Gartis Revisi!</i></u></b></div>
+                <div class="img2"></div>
+            </div>
+            <div id="item3">
+                Pelayanan Cepat & tanpa Ribet
+                <div class="txt-off3">Lebih hemat Belajar Bersama <b><u><i>Cek Selengkapnya di Promo</i></u></b></div>
+                <div class="img3"></div>
+            </div>
+            <div id="item4">
+                Kepuasan Client Yang Utama
+                <div class="txt-off4">Buat Semua Gambar Design mu Jadi <b><u><i>Lebih Keren!</i></u></b></div>
+                <div class="img4"></div>
+            </div>
+            <div id="item5">
+                Terpercaya 100%
+                <div class="txt-off5">Bisa Melakukan Pengembalian dana 100% <b><u><i>S&K Berlaku</i></u></b></div>
+                <div class="img5"></div>
+            </div>
+            <div class="list-card-area">
+                <div onclick="card1()" class="list-card1"></div>
+                <div onclick="card2()" class="list-card2"></div>
+                <div onclick="card3()" class="list-card3"></div>
+                <div onclick="card4()" class="list-card4"></div>
+                <div onclick="card5()" class="list-card5"></div>
+            </div>
+            <div class="txt-ket-area">
+                <div1>Video Game</div1>
+                <div2>Pembuatan Web</div2>
+                <div3>Bimbel</div3>
+                <div4>Creative Design</div4>
+                <div5>Refund</div5>
+            </div>
         </div>
-    </div><br>
-    <div class="game-categ-out">G<br>A<br>M<br>E<br><br>C<br>A<br>T<br>E<br>G<br>O<br>R<br>Y</div>
-    <div class="flex-v child-game-flex glass-black">
-        <div class="child-game-categ glass-black">Top Up Game</div>
-        <div class="child-game-categ glass-black">Game Voucher</div>
-        <div class="child-game-categ glass-black">Game Info</div>
-        <div class="child-game-categ glass-black">Game News</div>
-        <div class="child-game-categ glass-black">Game Tester</div>
-    </div>
-    <div class="main-categ-umum">C A T E G O R Y<br>U M U M</div>
-    <div class="flex-h shape-area-umum glass-black">
-        <div class="item-umum glass-black">Isi Pulsa</div>
-        <div class="item-umum glass-black">Kouta Inet</div>
-    </div>
-    <div class="item-umum-khusus glass-black">top up e-wallet</div>
-    <div class="main-kateg-oth-flex flex-h">
-        <div class="main-kateg-oth">C<br><br>A<br><br>T<br><br>E<br><br>G<br><br>O<br><br>R<br><br>Y</div>
-        <div class="main-kateg-oth"><br><br>L<br>A<br>I<br>N<br><br>____<br><br>O<br>T<br>H<br>E<br>R<br><br></div>
-    </div>
-    <div class="collide-oth-flex flex-v glass-black">
-        <div class="item-oth glass-black">Pembuatan website</div>
-        <div class="item-oth glass-black">Bimbel web desain</div>
-        <div class="item-oth glass-black np">Bimbel Bahasa pemrograman dasar</div>
-    </div>
+    </section>
+    <section id="tentang">
+        <div class="bg-set">
+            <div class="txt1">Terbaik Disegala Macam Aspek Pelayanan!</div>
+            <div class="txt-abt">
+                <h3 style="font-family: monospace;">Tentang AVE Store</h3>
+                <div class="line-title-abt"></div>
+                <u>AVE Store</u> adalah store penyedia berbagai layanan digital<br>
+                Dengan memprioritaskan kenyamanan pelanggan dan memberikan kepercayaan <b>100%</b> ke semua kalangan pelanggan<br>
+                Kami menjamin semua layanan dan produk kami memiliki harga yang paling rendah dengan kualitas <b>Terbaik</b><br>
+                Berbagai layanan dan produk yang kami sediakan memiliki <b>syarat & ketentuan</b> masing-masing,<br>
+                dari metode pembayaran, refund, dan dari berbagai aspek lainnya seperti customer service ada <b>syarat & kententuan</b> tersendiri<br>
+                Kami juga menjamin pelayanan pelanggan <b>fast reponse</b> untuk contact Whatsapp<br>
+                Kita juga akan meresponse chat semua pelanggan langsung dari kami tanpa ada chat bot satupun<br>
+                Dan kami tidak memprioritaskan atau mengutamakan pelanggan dengan alasan terkait biaya<br>
+                Semua pelanggan akan kami layani dengan <b>adil</b> dan tanpa ada alasan perlakuan khusus<br>
+                Semua update informasi seputar <u>AVE Store</u> hanya ada di website ini.<br>
+                Dan informasi selain dari website ini adalah palsu, jadi jika ingin mengetahui update informasi seputar <u>AVE Store</u><br>
+                anda bisa menggunakan layanan <b>Information Update</b> untuk memberikan pemberitahuan update informasi kepada anda secara langsung via medsos<br>
+                layanan <b>Information Update</b> ini <b>Gratis</b> tanpa biaya sedikitpun. 
+                <div class="ave-abt glass-white"></div>
+            </div>
+            <div class="note">Note: Semua informasi dari luar website ini adalah palsu!</div>
+        </div>
+    </section>
+    <section id="layanan">
+        <div class="bg-set">
+            
+        </div>
+    </section>
+    <section id="promo"></section>
+    <section id="order"></section>
+    <section id="snk"></section>
+    <section id="kontak"></section>
     <script src="script.js"></script>
 </body>
 </html>
