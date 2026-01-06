@@ -1,76 +1,308 @@
+.glass-white {background: rgba(255, 255, 255, 0.25);}
+.glass-black {background: rgba(0, 0, 0, 0.25);}
+body {background-color: #1e1e1e;}
 
-
-/*=====GLASS STYLE=====*/
-
-.glass-white {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
+.bg-set {
+    background-color: black; 
+    width: 90%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
 }
-.glass-black {
-    background: rgba(0, 0, 0 ,0.25);
-    backdrop-filter: blur(5px);
-}
-.glass-lightgreen {
-    background: rgba(144, 238, 144, 0.25);
-    backdrop-filter: blur(5px);
+.txt1 {
+    position: relative;
+    color: gray;
 }
 
-/*=====PANEL STYLE=====*/
-.panel-side {
-    width: 20%;
-    height: 370px;
+.title {
     position: fixed;
-    right: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: all 1s ease;
-    z-index: 2;
-}
-.panel-side:hover :not(:hover){
-    filter: blur(5px);
-    opacity: 0.5;
-}
-.flex-h {
-    display: flex;
-    justify-content: space-between;
-}
-.flex-v {
+    width: 200px;
+    height: 50px;
+    top: 10px;
+    right: 20px;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid gray;
+    z-index: 100;
+    backdrop-filter: blur(5px);
 }
-.item-panel {
-    width: 50%;
-    height: 10%;
-    position: relative;
-    left: 10%;
-    font-size: 70%;
-    color: yellow;
-    text-align: center;
-    align-content: center;
-    border-radius: 25% 10%;
-    background-color: #6b00d7;
-    box-shadow: 0 0 15px 1px blue;
-    transition: 1s;
-}
-.item-panel:hover {
-    border-radius: 10% 25%;
-    box-shadow: 0 0 15px 1px #6b00d7;
-    background-color: blue;
-    transition: 1s;
-}
-
-/*=====UMUM OTHER=====*/
-
 .ave {
     background-image: url("AVE.png");
     background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: fixed;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
-    z-index: 2;
 }
+.txt-ave {
+    width: 60%;
+    height: 30%;
+    border-radius: 20px;
+    font-family: monospace;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 700px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    left: 20px;
+    top: 10px;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+nav a {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+section {height: 700px;}
+
+.list-card-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    width: 90%;
+}
+.list-card1 {
+    background-image: url("Vgame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.list-card2 {
+    background-image: url("web.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+}
+.list-card2 {
+    background-image: url("web.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+    background-color: rgb(155, 155, 255);
+}
+.list-card3 {
+    background-image: url("course.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+    background-color: rgb(88, 88, 255);
+}
+.list-card4 {
+    background-image: url("drawing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+    background-color: rgb(137, 137, 223);
+}
+.list-card5 {
+    background-image: url("refund.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position-y: 0px;
+    background-position-x: 50%;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 155);
+}
+.txt-ket-area {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 10px;
+    left: 3%;
+    width: 90%;
+}
+.txt-ket-area div {
+    width: 200px;
+}
+
+#item1 {
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+.txt-off1 {
+    position: relative;
+    top: 20px;
+    color: lightblue;
+    font-size: 25px;
+}
+.txt-off1 b{color: yellow;}
+.img1 {
+    background-image: url("Vgame.png");
+    background-size: cover;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#item2 {
+    display: none;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+.txt-off2 {
+    position: relative;
+    top: 20px;
+    color: lightblue;
+    font-size: 25px;
+}
+.txt-off2 b{color: yellow;}
+.img2 {
+    background-image: url("web.png");
+    background-size: contain;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#item3 {
+    display: none;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+.txt-off3 {
+    position: relative;
+    top: 20px;
+    color: lightblue;
+    font-size: 25px;
+}
+.txt-off3 b{color: yellow;}
+.img3 {
+    background-image: url("course.png");
+    background-size: contain;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#item4 {
+    display: none;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+.txt-off4 {
+    position: relative;
+    top: 20px;
+    color: lightblue;
+    font-size: 25px;
+}
+.txt-off4 b{color: yellow;}
+.img4 {
+    background-image: url("drawing.png");
+    background-size: contain;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#item5 {
+    display: none;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+.txt-off5 {
+    position: relative;
+    top: 20px;
+    color: lightblue;
+    font-size: 25px;
+}
+.txt-off5 b{color: yellow;}
+.img5 {
+    background-image: url("refund.png");
+    background-size: contain;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.line-title-abt {position: relative; width: 200px; border: 1px solid white; top: -15px;}
+.txt-abt {padding-top: 100px; z-index: 2;}
+.txt-abt b {color: yellow; font-family: monospace;}
+.txt-abt u {color: aqua}
+.ave-abt {
+    background-image: url("AVE.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    opacity: 15%;
+    width: 600px;
+    height: 580px;
+    border-radius: 20px;
+}
+.note {position: absolute; bottom: 10px; color: gray; font-family: monospace;}
