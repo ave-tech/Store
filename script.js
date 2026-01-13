@@ -39,3 +39,32 @@ function card5() {
     item4.style.display = "none";
     item5.style.display = "block";
 }
+
+const cd = document.getElementById("cd");
+const bb = document.getElementById("bb");
+const pw = document.getElementById("pw");
+
+function cpw() {
+    cd.style.display = "none";
+    bb.style.display = "none";
+    pw.style.display = "block";
+}
+function cbb() {
+    cd.style.display = "none";
+    bb.style.display = "block";
+    pw.style.display = "none";
+}
+function ccd() {
+    cd.style.display = "block";
+    bb.style.display = "none";
+    pw.style.display = "none";
+}
+
+function order() {
+    document.getElementById("wf").style.display = "block";
+    document.getElementById("clo").style.display = "block";
+}
+function ttp() {
+    document.getElementById("wf").style.display = "none";
+    document.getElementById("clo").style.display = "none";
+}
