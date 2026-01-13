@@ -49,7 +49,7 @@ body {background-color: #1e1e1e;}
     text-align: center;
 }
 
-nav {
+.nav-global {
     position: fixed;
     display: flex;
     width: 700px;
@@ -61,7 +61,7 @@ nav {
     z-index: 100;
     backdrop-filter: blur(5px);
 }
-nav a {
+.nav-global a {
     color: white;
     font-family: monospace;
     text-decoration: none;
@@ -306,3 +306,255 @@ section {height: 700px;}
     border-radius: 20px;
 }
 .note {position: absolute; bottom: 10px; color: gray; font-family: monospace;}
+
+.flex-serv-h {
+    position: absolute;
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; height: 90%; left: 0px;
+}
+.flex-serv-v {
+    display: flex; justify-content: space-between; flex-direction: column;
+    width: 45%; height: 100%; border-left: 1px solid gray;
+    animation: load 8s ease forwards;
+}
+@keyframes load {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.item {
+    position: relative;
+    width: 250px; height: 50px; cursor: pointer;
+    border-radius: 0 20px 20px 0; border: 1px solid gray; border-left: none;
+    font-family: monospace; font-size: 15px; padding-top: 30px; padding-left: 20px; background-color: rgb(53, 53, 53);
+    transition: all 0.3s; z-index: 2;
+}
+.gm {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("gta6.png"); background-size: cover; background-repeat: no-repeat;
+    width: 250px; height: 200px; border-radius: 20px; border: none;
+}
+.item:hover .gm {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .gm {
+    animation: hide 1s ease forwards;
+}
+.ew {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("ewallet.png"); background-size: contain; background-repeat: no-repeat;
+    width: 250px; height: 200px; border-radius: 20px; border: none;
+}
+.item:hover .ew {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .ew {
+    animation: hide 1s ease forwards;
+}
+.pu {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("pulsa.png"); background-size: contain; background-repeat: no-repeat;
+    width: 150px; border: none; border-radius: 50%;
+}
+.item:hover .pu {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .pu {
+    animation: hide 1s ease forwards;
+}
+.in {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("inet.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 50%; border: none;
+}
+.item:hover .in {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .in {
+    animation: hide 1s ease forwards;
+}
+.cd {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("cd.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 20px; border: none;
+}
+.item:hover .cd {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .cd {
+    animation: hide 1s ease forwards;
+}
+.pw {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("pw.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 20px; border: none;
+}
+.item:hover .pw {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .pw {
+    animation: hide 1s ease forwards;
+}
+.wd {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("wd.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 20px; border: none;
+}
+.item:hover .wd {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .wd {
+    animation: hide 1s ease forwards;
+}
+.pl {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("pl.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 20px; border: none;
+}
+.item:hover .pl {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .pl {
+    animation: hide 1s ease forwards;
+}
+.sr {
+    position: absolute; top: -150px; z-index: 1;
+    background-image: url("sr.png"); background-size: cover; background-repeat: no-repeat;
+    width: 150px; border-radius: 20px; border: none;
+}
+.item:hover .sr {
+    animation: show 1s ease forwards;
+}
+.item:not(:hover) .sr {
+    animation: hide 1s ease forwards;
+}
+@keyframes show {
+    from {height: 0px; opacity: 0; top: 0px;}
+    to {height: 150px; opacity: 1; top: -150px;}
+}
+@keyframes hide {
+    from {height: 150px; opacity: 1; top: -150px;}
+    to {height: 0px; opacity: 0; top: 0px;}
+}
+
+.nav-promo {
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    left: 20px;
+    top: 10px;
+    z-index: 100;
+}
+.nav-promo div {
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pr-pw {display: block;}
+.pr-pw .txt1 {
+    position: absolute; top: 200px; width: 400px;
+    color: yellow; font-family: monospace; font-size: 20px;
+}
+.pr-pw .txt1 b {color: aqua;}
+.pr-pw .txt2 {
+    position: absolute; top: 100px; width: 300px; right: 20px;
+    color: rgb(49, 255, 221); font-family: monospace; font-size: 20px;
+}
+.pr-pw .txt3 {
+    position: absolute; bottom: 10px; right: 200px;
+    color: rgb(116, 130, 255); font-family: monospace; font-size: 15px;
+}
+.img-wd {
+    position: absolute; top: 100px; width: 400px; height: 400px; left: 450px;
+    background-image: url("pw.png"); background-size: cover;
+}
+
+.bb-pr {display: none;}
+.bb-pr .title {
+    position: absolute; top: -20px; right: -10px;
+    font-family: cursive; font-size: 20px; color: rgb(0, 255, 0);
+    border: none; backdrop-filter: none;
+}
+.bb-pr .txt1 {
+    position: absolute; top: 200px; width: 400px;
+    color: yellow; font-family: monospace; font-size: 25px;
+}
+.bb-pr .txt2 {
+    position: absolute; bottom: 10px; width: 400px;
+    color: gray; font-family: monospace; font-size: 15px;
+}
+.bb-pr .txt2 b {color: yellow;}
+.bb-pr ul {
+    position: absolute; top: 100px; width: 300px; right: 20px;
+    color: rgb(49, 255, 221); font-family: monospace; font-size: 20px;
+}
+.bb-pr .txt3 {
+    position: absolute; bottom: 10px; right: 200px;
+    color: rgb(116, 130, 255); font-family: monospace; font-size: 15px;
+}
+.img-bb {
+    position: absolute; top: 100px; width: 400px; height: 400px; left: 450px;
+    background-image: url("wd.png"); background-size: cover;
+}
+.cd-pr {display: none;}
+.ft .title {
+    position: absolute; top: -20px; right: -10px;
+    font-family: cursive; font-size: 20px; color: rgb(0, 255, 0);
+    border: none; backdrop-filter: none;
+}
+.cd-pr .txt1 {
+    position: absolute; top: 200px; width: 400px;
+    color: yellow; font-family: monospace; font-size: 25px;
+}
+.cd-pr .txt2 {
+    position: absolute; top: 100px; right: 20px;
+    color: aquamarine; font-family: monospace; font-size: 20px;
+}
+.cd-pr .txt3 {
+    position: absolute; bottom: 10px; right: 200px;
+    color: rgb(116, 130, 255); font-family: monospace; font-size: 15px;
+}
+.img-cd {
+    position: absolute; top: 100px; width: 400px; height: 400px; left: 450px;
+    background-image: url("cd.png"); background-size: cover;
+}
+
+.txt-mid-odr {
+    position: relative; padding-top: 80px;
+    text-align: center; font-size: 40px; font-family: monospace; color: yellow;
+}
+.border-qr {
+    position: relative; left: 438px;
+    width: 300px; height: 300px; background-color: #1e1e1e;
+    text-align: center; padding-top: 2%; border-radius: 20px;
+    transition: all 0.5s;
+}
+.border-qr:hover { z-index: 1; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(5px); border-radius: 20px 0 20px 0; scale: 1.1;}
+.qr {
+    width: 80%; height: 80%; padding-left: 10%;
+    background-image: url("qr-order.png"); background-size: contain; background-repeat: no-repeat; background-position-x: right;
+}
+.scan-me {
+    position: relative; padding-top: 10px;
+    font-size: 25px; font-family: monospace;
+}
+.btn-sc {
+    position: relative; width: 100px; height: 20px; left: 45%; top: 10px;
+    border-radius: 20px; border: 1px solid white;
+    text-align: center; font-family: monospace; padding-top: 5px;
+    cursor: pointer; transition: all 0.5s;
+}
+.btn-sc:hover {scale: 1.2; background-color: blue;}
+.wf {
+    position: absolute; top: 20px; border: none; border-radius: 20px;
+    width: 600px; height: 560px; left: 300px; display: none;
+}
+.close {
+    position: absolute; top: 60px; right: 380px;
+    width: 30px; height: 30px; border-radius: 50%;
+    background-color: red; z-index: 1; cursor: pointer; display: none;
+}
