@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="nav-global">
         <a href="#utama">Home</a>
         <a href="#tentang">Tentang</a>
         <a href="#layanan">Layanan</a>
@@ -31,7 +31,7 @@
             </div>
             <div id="item2">
                 Harga Sangat Terjangkau!
-                <div class="txt-off2">Pembuatan Website <b><u><i>1 Bulan Pertama Gartis Revisi!</i></u></b></div>
+                <div class="txt-off2">Pembuatan Website <b><u><i>1 Bulan Pertama gratis Revisi!</i></u></b></div>
                 <div class="img2"></div>
             </div>
             <div id="item3">
@@ -91,13 +91,79 @@
     </section>
     <section id="layanan">
         <div class="bg-set">
-            
+            <div class="flex-serv-h">
+                <div class="flex-serv-v">
+                    <div class="item"><div class="gm"></div> Top Up Video Game</div>
+                    <div class="item"><div class="ew"></div> Top Up E WAllet</div>
+                    <div class="item"><div class="pu"></div> Isi Ulang Pulsa</div>
+                    <div class="item"><div class="in"></div> Isi Kouta Internet</div>
+                    <div class="item"><div class="cd"></div> Creative Design</div>
+                </div>
+                <div class="flex-serv-v">
+                    <div class="item"><div class="pw"></div> Pembuatan Website</div>
+                    <div class="item"><div class="wd"></div> Bimbel Web Design</div>
+                    <div class="item"><div class="pl"></div> Bimbel Bahasa Pemrograman Dasar</div>
+                    <div class="item"><div class="sr"></div> Special Request</div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="promo"></section>
-    <section id="order"></section>
-    <section id="snk"></section>
-    <section id="kontak"></section>
+    <section id="promo">
+        <div class="bg-set">
+            <div class="nav-promo">
+                <div onclick="cpw()">Pembuatan website</div>
+                <div onclick="cbb()">Bimbel</div>
+                <div onclick="ccd()">Creative Design</div>
+            </div>
+            <div class="pr-pw ft" id="pw">
+                <p class="title">AVE Design</p>
+                <p class="txt1">Pertama kali membuat website disini <b>Gratis Revisi Satu Bulan Pertama</b></p>
+                <p class="txt2">Mulai Dari 20K/bulan bisa update web 2 kali</p>
+                <p class="txt3">beli website dengan bayar satu kali seumur hidup mulai dari 100K</p>
+                <div class="img-wd"></div>
+            </div>
+            <div class="bb-pr" id="bb">
+                <p class="title">AVE Course</p>
+                <p class="txt1">Belajar bersama lebih hemat!</p>
+                <p class="txt2">Generasi emas bersama <b>AVEC</b></p>
+                <ul type="disc">
+                    <li>1 orang = 5K/jam</li><br>
+                    <li>2 orang = 8K/jam</li><br>
+                    <li>3 orang = 10K/jam</li><br>
+                    <li>4 orang = 12K/jam</li><br>
+                    <li>5 orang = 13K/jam</li><br>
+                    <li>dan seterusnya <b>-50%</b></li>
+                </ul>
+                <p class="txt3">Belajar gratis materi dasar dengan S&K yang Berlaku</p>
+                <div class="img-bb"></div>
+            </div>
+            <div class="cd-pr ft" id="cd">
+                <p class="title">AVE Design</p>
+                <p class="txt1">Design mahal, harga teman</p>
+                <p class="txt2">mulai dari 5K saja<br>ciptakan design mu jadi lebih keren</p>
+                <p class="txt3">gratis Revisi 2 kali untuk minimal 20K</p>
+                <div class="img-cd"></div>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="bg-set">
+            <div class="txt-mid-odr">Order Lebih Mudah Disini</div>
+            <div class="border-qr">
+                <div class="qr"></div>
+                <div class="scan-me">Scan Me!</div>
+            </div>
+            <div onclick="order()" class="btn-sc">Order Now</div>
+            <iframe id="wf" class="wf" src="https://whatsform.com/vnu2n5"></iframe>
+            <div id="clo" onclick="ttp()" class="close"></div>
+        </div>
+    </section>
+    <section id="snk">
+        <div class="bg-set"></div>
+    </section>
+    <section id="kontak">
+        <div class="bg-set"></div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
