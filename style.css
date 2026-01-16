@@ -558,3 +558,21 @@ section {height: 700px;}
     width: 30px; height: 30px; border-radius: 50%;
     background-color: red; z-index: 1; cursor: pointer; display: none;
 }
+
+.snk-flex-menu {
+    display: flex; position: absolute; top: 10px; left: 20px;
+}
+.snk-flex-child {
+    display: flex; position: absolute; top: 120px; left: 20px; flex-direction: column;
+}
+.snk-main-menu {
+    position: relative; width: 100px; height: 70px;
+    border: 2px solid white; text-align: center; font-size: 30px;
+    padding-top: 35px; cursor: pointer;
+}
+.parent {width: 152.5px;}
+.snk-child {
+    position: relative; width: 100px; height: 112px;
+    border: 2px solid white; text-align: center; font-size: 30px;
+    padding-top: 35px; cursor: pointer;
+}
