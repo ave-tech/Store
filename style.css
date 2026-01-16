@@ -3,213 +3,82 @@
 body {background-color: #1e1e1e;}
 
 .bg-set {
-    background-color: black; 
-    width: 90%;
-    height: 80%;
-    position: relative;
-    top: 10%;
-    left: 5%;
-    border-radius: 20px;
-    padding: 20px;
-    color: white;
+    background-color: black; color: white;
+    position: relative; top: 10%; left: 5%; width: 90%; height: 80%;
+    border-radius: 20px; padding: 20px;
 }
-.txt1 {
-    position: relative;
-    color: gray;
-}
+.txt1 {position: relative; color: gray;}
 
 .title {
-    position: fixed;
-    width: 200px;
-    height: 50px;
-    top: 10px;
-    right: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 20px;
-    border: 2px solid gray;
-    z-index: 100;
-    backdrop-filter: blur(5px);
+    position: fixed; width: 200px; height: 50px; top: 10px; right: 20px;
+    display: flex; justify-content: space-around; align-items: center;
+    border-radius: 20px; border: 2px solid gray; z-index: 100; backdrop-filter: blur(5px);
 }
 .ave {
-    background-image: url("AVE.png");
-    background-size: cover;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+    background-image: url("AVE.png"); background-size: cover;
+    width: 35px; height: 35px; border-radius: 50%;
 }
 .txt-ave {
-    width: 60%;
-    height: 30%;
-    border-radius: 20px;
-    font-family: monospace;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    width: 60%; height: 30%;
+    border-radius: 20px; font-family: monospace; color: white; padding: 10px; text-align: center;
 }
-
 .nav-global {
-    position: fixed;
-    display: flex;
-    width: 700px;
-    height: 30px;
-    justify-content: space-between;
-    align-items: center;
-    left: 20px;
-    top: 10px;
-    z-index: 100;
-    backdrop-filter: blur(5px);
+    position: fixed; left: 20px; top: 10px; width: 700px; height: 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 100; backdrop-filter: blur(5px);
 }
-.nav-global a {
-    color: white;
-    font-family: monospace;
-    text-decoration: none;
-    font-size: 15px;
-}
-
+.nav-global a {color: white; font-family: monospace; text-decoration: none; font-size: 15px;}
 section {height: 700px;}
-
 .list-card-area {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    bottom: 30px;
-    left: 5%;
-    width: 90%;
+    display: flex; justify-content: space-evenly; align-items: center;
+    position: absolute; width: 90%; bottom: 30px; left: 5%;
 }
 .list-card1 {
-    background-image: url("Vgame.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-    background-color: aqua;
+    background-image: url("Vgame.png"); background-size: contain; background-repeat: no-repeat; background-color: aqua; background-position-x: 50%; background-position-y: 0px;
+    width: 200px; height: 100px; border-radius: 20px;
 }
 .list-card2 {
-    background-image: url("web.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-}
-.list-card2 {
-    background-image: url("web.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-    background-color: rgb(155, 155, 255);
+    background-image: url("web.png"); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%; background-color: rgb(155, 155, 255);
+    width: 200px; height: 100px; border-radius: 20px;
 }
 .list-card3 {
-    background-image: url("course.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-    background-color: rgb(88, 88, 255);
+    background-image: url("course.png"); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%; background-color: rgb(88, 88, 255);
+    width: 200px; height: 100px; border-radius: 20px; 
 }
 .list-card4 {
-    background-image: url("drawing.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-    background-color: rgb(137, 137, 223);
+    background-image: url("drawing.png"); background-size: contain; background-color: rgb(137, 137, 223); background-position-y: 0px; background-position-x: 50%; background-repeat: no-repeat;
+    width: 200px; height: 100px; border-radius: 20px; 
 }
 .list-card5 {
-    background-image: url("refund.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position-y: 0px;
-    background-position-x: 50%;
-    border-radius: 20px;
-    background-color: rgb(51, 51, 155);
+    background-image: url("refund.png"); background-color: rgb(51, 51, 155); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%;
+    width: 200px; height: 100px; border-radius: 20px;
 }
 .txt-ket-area {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    bottom: 10px;
-    left: 3%;
-    width: 90%;
+    position: absolute; bottom: 10px; left: 3%; width: 90%;
+    display: flex; justify-content: space-around;
 }
-.txt-ket-area div {
-    width: 200px;
-}
-
+.txt-ket-area div {width: 200px;}
 #item1 {
-    display: block;
-    position: relative;
-    left: 20px;
-    top: 100px;
-    color: white;
-    font-size: 50px;
-    font-family: monospace;
+    display: block; position: relative; left: 20px; top: 100px;
+    color: white; font-size: 50px; font-family: monospace;
 }
-.txt-off1 {
-    position: relative;
-    top: 20px;
-    color: lightblue;
-    font-size: 25px;
-}
+.txt-off1 {position: relative; top: 20px; color: lightblue; font-size: 25px;}
 .txt-off1 b{color: yellow;}
 .img1 {
-    background-image: url("Vgame.png");
-    background-size: cover;
-    position: absolute;
-    right: 100px;
-    top: -100px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    background-image: url("Vgame.png"); background-size: cover;
+    position: absolute; right: 100px; top: -100px; width: 300px; height: 300px; border-radius: 50%;
 }
 
 #item2 {
-    display: none;
-    position: relative;
-    left: 20px;
-    top: 100px;
-    color: white;
-    font-size: 50px;
-    font-family: monospace;
+    display: none; position: relative; left: 20px; top: 100px;
+    color: white; font-size: 50px; font-family: monospace;
 }
-.txt-off2 {
-    position: relative;
-    top: 20px;
-    color: lightblue;
-    font-size: 25px;
-}
+.txt-off2 {position: relative; top: 20px; color: lightblue; font-size: 25px;}
 .txt-off2 b{color: yellow;}
 .img2 {
-    background-image: url("web.png");
-    background-size: contain;
-    position: absolute;
-    right: 100px;
-    top: -100px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    background-image: url("web.png"); background-size: contain;
+    position: absolute; right: 100px; top: -100px; width: 300px; height: 300px; border-radius: 50%;
 }
-
 #item3 {
     display: none;
     position: relative;
@@ -321,100 +190,64 @@ section {height: 700px;}
     background-image: url("gta6.png"); background-size: cover; background-repeat: no-repeat;
     width: 250px; height: 200px; border-radius: 20px; border: none;
 }
-.item:hover .gm {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .gm {
-    animation: hide 1s ease forwards;
-}
+.item:hover .gm {animation: show 1s ease forwards;}
+.item:not(:hover) .gm {animation: hide 1s ease forwards;}
 .ew {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("ewallet.png"); background-size: contain; background-repeat: no-repeat;
     width: 250px; height: 200px; border-radius: 20px; border: none;
 }
-.item:hover .ew {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .ew {
-    animation: hide 1s ease forwards;
-}
+.item:hover .ew {animation: show 1s ease forwards;}
+.item:not(:hover) .ew {animation: hide 1s ease forwards;}
 .pu {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("pulsa.png"); background-size: contain; background-repeat: no-repeat;
     width: 150px; border: none; border-radius: 50%;
 }
-.item:hover .pu {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .pu {
-    animation: hide 1s ease forwards;
-}
+.item:hover .pu {animation: show 1s ease forwards;}
+.item:not(:hover) .pu {animation: hide 1s ease forwards;}
 .in {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("inet.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 50%; border: none;
 }
-.item:hover .in {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .in {
-    animation: hide 1s ease forwards;
-}
+.item:hover .in {animation: show 1s ease forwards;}
+.item:not(:hover) .in {animation: hide 1s ease forwards;}
 .cd {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("cd.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 20px; border: none;
 }
-.item:hover .cd {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .cd {
-    animation: hide 1s ease forwards;
-}
+.item:hover .cd {animation: show 1s ease forwards;}
+.item:not(:hover) .cd {animation: hide 1s ease forwards;}
 .pw {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("pw.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 20px; border: none;
 }
-.item:hover .pw {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .pw {
-    animation: hide 1s ease forwards;
-}
+.item:hover .pw {animation: show 1s ease forwards;}
+.item:not(:hover) .pw {animation: hide 1s ease forwards;}
 .wd {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("wd.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 20px; border: none;
 }
-.item:hover .wd {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .wd {
-    animation: hide 1s ease forwards;
-}
+.item:hover .wd {animation: show 1s ease forwards;}
+.item:not(:hover) .wd {animation: hide 1s ease forwards;}
 .pl {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("pl.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 20px; border: none;
 }
-.item:hover .pl {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .pl {
-    animation: hide 1s ease forwards;
-}
+.item:hover .pl {animation: show 1s ease forwards;}
+.item:not(:hover) .pl {animation: hide 1s ease forwards;}
 .sr {
     position: absolute; top: -150px; z-index: 1;
     background-image: url("sr.png"); background-size: cover; background-repeat: no-repeat;
     width: 150px; border-radius: 20px; border: none;
 }
-.item:hover .sr {
-    animation: show 1s ease forwards;
-}
-.item:not(:hover) .sr {
-    animation: hide 1s ease forwards;
-}
+.item:hover .sr {animation: show 1s ease forwards;}
+.item:not(:hover) .sr {animation: hide 1s ease forwards;}
 @keyframes show {
     from {height: 0px; opacity: 0; top: 0px;}
     to {height: 150px; opacity: 1; top: -150px;}
@@ -564,8 +397,17 @@ section {height: 700px;}
     border: 2px solid white; text-align: center; font-size: 30px;
     padding-top: 35px; cursor: pointer;
 }
+.flex-kontak {display: flex; justify-content: space-evenly; align-items: center;}
+.kontak {
+    width: 200px; height: 50px;
+    text-align: center; font-size: 30px; padding-top: 10px;
+    border: 1px solid white; border-radius: 20px; transition: all 0.5s; cursor: pointer;
+}
+.wa:hover {scale: 1.2; background-color: rgb(31, 233, 31); color: black;}
+.ig:hover {scale: 1.2; background-color: lightcoral; color: black;}
+.explain-kontak {position: absolute; top: 10px; left: 20px; font-family: monospace; color: white;}
 
-@media (min-width: 980px) and (max-width: 981px) {
+@media (min-width: 980px) and (max-width: 1365px) {
     #item1 {font-size: 30px;}
     #item2 {font-size: 30px;}
     #item3 {font-size: 30px;}
