@@ -293,18 +293,6 @@ section {height: 700px;}
 .txt-abt {padding-top: 100px; z-index: 2;}
 .txt-abt b {color: yellow; font-family: monospace;}
 .txt-abt u {color: aqua}
-.ave-abt {
-    background-image: url("AVE.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    opacity: 15%;
-    width: 600px;
-    height: 580px;
-    border-radius: 20px;
-}
 .note {position: absolute; bottom: 10px; color: gray; font-family: monospace;}
 
 .flex-serv-h {
@@ -575,4 +563,30 @@ section {height: 700px;}
     position: relative; width: 100px; height: 112px;
     border: 2px solid white; text-align: center; font-size: 30px;
     padding-top: 35px; cursor: pointer;
+}
+
+@media (min-width: 980px) and (max-width: 981px) {
+    #item1 {font-size: 30px;}
+    #item2 {font-size: 30px;}
+    #item3 {font-size: 30px;}
+    #item4 {font-size: 30px;}
+    #item5 {font-size: 30px;}
+    .txt-off1 {font-size: 15px; width: 40%}
+    .txt-off2 {font-size: 15px; width: 40%}
+    .txt-off3 {font-size: 15px; width: 40%}
+    .txt-off4 {font-size: 15px; width: 40%}
+    .txt-off5 {font-size: 15px; width: 40%}
+    .img1 {right: 20px;}
+    .img2 {right: 20px;}
+    .img3 {right: 20px;}
+    .img4 {right: 20px;}
+    .img5 {right: 20px;}
+    .img-wd {top: 170px; width: 380px; height: 380px;}
+    .img-bb {top: 250px; width: 300px; height: 300px; left: 270px;}
+    .bb-pr .txt3 {right: 50px;}
+    .img-cd {top: 180px; width: 370px; height: 370px;}
+    .border-qr {left: 290px;}
+    .snk-main-menu {font-size: 15px;}
+    .parent {width: 105px;}
+    .snk-child {font-size: 15px;
 }
