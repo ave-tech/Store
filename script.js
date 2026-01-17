@@ -68,3 +68,7 @@ function ttp() {
     document.getElementById("wf").style.display = "none";
     document.getElementById("clo").style.display = "none";
 }
+
+function ig() {window.location.href = 'https://www.instagram.com/weeave3?igsh=ZGpldjgyNTRzdXE0';}
+function wa() {window.location.href = 'https://wa.me/+6287722029327';}
+function em() {window.location.href = 'mailto:akunutamawee@gmail.com';}
