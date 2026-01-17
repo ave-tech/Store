@@ -35,23 +35,23 @@ section {height: 700px;}
 }
 .list-card1 {
     background-image: url("Vgame.png"); background-size: contain; background-repeat: no-repeat; background-color: aqua; background-position-x: 50%; background-position-y: 0px;
-    width: 200px; height: 100px; border-radius: 20px;
+    width: 200px; height: 100px; border-radius: 20px; cursor: pointer;
 }
 .list-card2 {
     background-image: url("web.png"); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%; background-color: rgb(155, 155, 255);
-    width: 200px; height: 100px; border-radius: 20px;
+    width: 200px; height: 100px; border-radius: 20px; cursor: pointer;
 }
 .list-card3 {
     background-image: url("course.png"); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%; background-color: rgb(88, 88, 255);
-    width: 200px; height: 100px; border-radius: 20px; 
+    width: 200px; height: 100px; border-radius: 20px; cursor: pointer;
 }
 .list-card4 {
     background-image: url("drawing.png"); background-size: contain; background-color: rgb(137, 137, 223); background-position-y: 0px; background-position-x: 50%; background-repeat: no-repeat;
-    width: 200px; height: 100px; border-radius: 20px; 
+    width: 200px; height: 100px; border-radius: 20px; cursor: pointer;
 }
 .list-card5 {
     background-image: url("refund.png"); background-color: rgb(51, 51, 155); background-size: contain; background-repeat: no-repeat; background-position-y: 0px; background-position-x: 50%;
-    width: 200px; height: 100px; border-radius: 20px;
+    width: 200px; height: 100px; border-radius: 20px; cursor: pointer;
 }
 .txt-ket-area {
     position: absolute; bottom: 10px; left: 3%; width: 90%;
@@ -405,9 +405,9 @@ section {height: 700px;}
 }
 .wa:hover {scale: 1.2; background-color: rgb(31, 233, 31); color: black;}
 .ig:hover {scale: 1.2; background-color: lightcoral; color: black;}
+.em:hover {scale: 1.2; background-color: yellow; color: black;}
 .explain-kontak {position: absolute; top: 10px; left: 20px; font-family: monospace; color: white;}
-
-@media (min-width: 980px) and (max-width: 1365px) {
+@media (min-width: 980px) and (max-width: 1365px) { /*PHONE DEKSTOP*/
     #item1 {font-size: 30px;}
     #item2 {font-size: 30px;}
     #item3 {font-size: 30px;}
@@ -431,4 +431,63 @@ section {height: 700px;}
     .snk-main-menu {font-size: 15px;}
     .parent {width: 105px;}
     .snk-child {font-size: 15px;}
+}
+/*-------------Mobile---------------*/
+@media (max-width: 575px) {
+    .bg-set {padding: 10px; width: 84%}
+    .nav-global {width: 85%;}
+    .nav-global a {font-size: 10px;}
+    .title {display: none;}
+    .img1 {position: relative; width: 250px; height: 250px; right: 0px; top: 50px; border-radius: 0px;}
+    .img2 {position: relative; width: 250px; height: 250px; right: 0px; top: 50px; border-radius: 0px;}
+    .img3 {position: relative; width: 250px; height: 250px; right: 0px; top: 50px; border-radius: 0px;}
+    .img4 {position: relative; width: 250px; height: 250px; right: 0px; top: 50px; border-radius: 0px;}
+    .img5 {position: relative; width: 250px; height: 250px; right: 0px; top: 50px; border-radius: 0px;}
+    #item1 {font-size: 18px;}
+    #item2 {font-size: 18px;}
+    #item3 {font-size: 14px;}
+    #item4 {font-size: 16px;}
+    #item5 {font-size: 18px;}
+    .txt-off1 {font-size: 8px;}
+    .txt-off2 {font-size: 8px;}
+    .txt-off3 {font-size: 8px;}
+    .txt-off4 {font-size: 8px;}
+    .txt-off5 {font-size: 8PX;}
+    .list-card1 {background-image: none; background-color: blueviolet; border-radius: 50%; width: 40px; height: 40px;}
+    .list-card2 {background-image: none; background-color: aqua; border-radius: 50%; width: 40px; height: 40px;}
+    .list-card3 {background-image: none; background-color: skyblue; border-radius: 50%; width: 40px; height: 40px;}
+    .list-card4 {background-image: none; background-color: lightcoral; border-radius: 50%; width: 40px; height: 40px;}
+    .list-card5 {background-image: none; background-color: yellow; border-radius: 50%; width: 40px; height: 40px;}
+    .txt-ket-area {display: none;}
+    .txt-abt {font-size: 10px; padding-top: 40px;}
+    .item {left: 10px; width: 100px; height: 30px; font-size: 10px; padding-top: 10px; border-radius: 20px;}
+    .flex-serv-v {border: none;}
+    .eight {padding: 10px; }
+    @keyframes show {
+        from {display: none}
+        to {display: none}
+    }
+    @keyframes hide {
+        from {display: none;}
+        to {display: none;}
+    }
+    .img-wd {width: 250px; height: 250px; left: 0px; top: 260px;}
+    .img-bb {width: 250px; height: 250px; left: 0px; top: 260px;}
+    .img-cd {width: 250px; height: 250px; left: 0px; top: 260px;}
+    .nav-promo {width: 84%;}
+    .nav-promo div {font-size: 8px;}
+    .pr-pw .txt1 {font-size: 10px; width: 250px;}
+    .pr-pw .txt2 {font-size: 15px; width: 200px;}
+    .pr-pw .txt3 {font-size: 10px; width: 300px; right: 0px;}
+    .bb-pr .txt1 {font-size: 10px; width: 200px; top: 70px;}
+    .bb-pr .txt2 {font-size: 10px; width: 200px;}
+    .bb-pr .txt3 {font-size: 10px; width: 200px; right: 0px; bottom: 30px;}
+    .bb-pr ul {font-size: 10px; right: 0px; width: 140px;}
+    .cd-pr .txt1 {font-size: 10px; width: 200px; border:}
+    .cd-pr .txt2 {font-size: 10px; width: 230px; border:}
+    .cd-pr .txt3 {font-size: 10px; width: 250px; right: 20px;}
+    .txt-mid-odr {font-size: 15px;}
+    .border-qr {left: 45px; width: 200px; height: 200px;}
+    .btn-sc {left: 95px;}
+    .kontak {width: 80px; height: 20px; font-size: 10px;}
 }
